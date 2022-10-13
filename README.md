@@ -46,8 +46,8 @@ flowchart LR
 
 ### Our Contributors:
 
-<a href="https://github.com/Pavan-Kamthane/Java-Programs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Pavan-Kamthane/Java-Programs" />
+<a href="https://github.com/Pavan-Kamthane/Cpp_Lang/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Pavan-Kamthane/Cpp_Lang" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
