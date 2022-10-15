@@ -1,44 +1,29 @@
 #include<iostream>
 using namespace std;
-
-int main(){
-  //declaring array
-  int array[5];
-  cout<<"Enter 5 numbers randomly : "<<endl;
-  for(int i=0; i<5; i++)
-  {
-    //Taking input in array
-    cin>>array[i];
-  }
-  cout<<endl;
-  cout<<"Input array is: "<<endl;
-
-  for(int j=0; j<5; j++)
-  {
-    //Displaying Array
-    cout<<"\t\t\tValue at "<<j<<" Index: "<<array[j]<<endl;
-  }
-  cout<<endl;
-  // Bubble Sort Starts Here
-  int temp;
-  for(int i2=0; i2<=4; i2++)
-  {
-    for(int j=0; j<4; j++)
-    {
-      //Swapping element in if statement
-      if(array[j]>array[j+1])
-      {
-        temp=array[j];
-        array[j]=array[j+1];
-        array[j+1]=temp;
+int main ()
+{
+   int i, j,temp,pass=0;
+   int a[10] = {10,2,0,14,43,25,18,1,5,45};
+   cout <<"Input list ...\n";
+   for(i = 0; i<10; i++) {
+      cout <<a[i]<<"\t";
+   }
+cout<<endl;
+for(i = 0; i<10; i++) {
+   for(j = i+1; j<10; j++)
+   {
+      if(a[j] < a[i]) {
+         temp = a[i];
+         a[i] = a[j];
+         a[j] = temp;
       }
-    }
-  }
-  // Displaying Sorted array
-  cout<<"  Sorted Array is: "<<endl;
-  for(int i3=0; i3<5; i3++)
-  {
-    cout<<"\t\t\tValue at "<<i3<<" Index: "<<array[i3]<<endl;
-  }
-  return 0;
+   }
+pass++;
+}
+cout <<"Sorted Element List ...\n";
+for(i = 0; i<10; i++) {
+   cout <<a[i]<<"\t";
+}
+cout<<"\nNumber of passes taken to sort the list:"<<pass<<endl;
+return 0;
 }
