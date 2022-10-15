@@ -1,0 +1,3972 @@
+INDEX
+1.		To convert seconds into hours , minutes and seconds.	
+2.		To convert inches into foot-inch.	
+3.		To find modulus remainder and quotient while dividing two numbers.	
+4.		To find area of a circle .	
+5.		Operations on Cylinder .	
+6.		Operations on Cube .	
+7.		Calculator	
+8.		Operations of Cuboid.	
+9.		Calculating simple interest.	
+10.		Use of Increament operator.	
+11.		To find HCF of two numbers.	
+12.		Calculating average marks.	
+13.		Calculating bonus of an employee with from weekly sale.	
+14.		Calculate area of triangle using herons formulae	
+15.		Calculate profit and loss.	
+16.		To calculate Molarity of a solution.	
+17.		Menu Driven program (area and volume)	
+18.		To calculate roots of the equation.	
+19.		Grade calculator.	
+20.		To calculate sum of the digits of a given number.	
+21.		To calculate electricity bill on the basis of units consumed.	
+22.		To calculate largest number among four given number.	
+23.		To calculate the number given is even or odd.	
+24.		To check whether the given number is a palindrome or not.	
+25.		To identify a given number as prime or composite.	
+26.		To calculate tution fees of a students with respect to the class he/she studies.	
+27.		To wap the values of two given number by using a third variable.	
+28.		To print ‘N’ natural numbers as per user needs.	
+29.		To calculate sum of the given series.	
+30.		To calculate the sum of the series	
+31.		To calculate the sum of the series.	
+32.		Let user enter any numbers and then find largest and second largest numbers from the list.
+To reverse the numbers or the values stored in the given array.	
+33.		To reverse the number entered by the user.	
+34.		To calculate simple interest (with the use of functions ).	
+35.		To tell whether a number is prime or composite (with functions).	
+36.		To calculate no. of permutations and combinations for ‘N’ objects taking ‘R’ at a time.	
+37.		To perform operations on cylinder (menu driven) using functions.	
+38.		To calculate and display Multiplication table of any number.	
+39.		To calculate sum of ‘N’ odd natural numbers.	
+40.		Menu-Driven program.	
+41.		To find the maximum and minimum element from an array of ‘N’ numbers entered by the user.	
+42.		To find HCF of two numbers using functions.	
+43.		To calculate factorial of a given number.	
+44.		Calculator for basic mathematical operations (via use of functions).	
+45.		To take ‘N’ numbers from user in an array and then search a number through technique of linear search.	
+46.		To take ‘N’ numbers from user in an array and then search a number through technique of binary search.	
+47.		To store ‘N’ numbers in an array and then display it and calculate sum of all the elements of array if user assist.	
+48.		To take ’N’ elements from user and store them in array and then ask user to insert an element in already existing list.	
+49.		To take roll no. , name and marks in 3 subjects and calculate the average of the marks and display them of 2 students.	
+50.		To take code no. , name, Hra , da and calculate gross and sort them according to gross salary of ‘N’ employees.	
+51.		Write C++ program to push and pop numbers in a stack and display them as per user’s choice.	
+52.		Write a Menu driven program to enter details of a student using stacks.	
+53.		Write a C++ program to add, delete and display numbers in a queue as per user’s choice.	
+54.		Write a Menu driven program for entering details of students using queues.	
+55.		Write a Menu driven program to enter details of student and make use of circular queues for this purpose.	
+56.		Write a Menu driven program to enter, delete and display numbers by using pointers.	
+57.		Write a C++ program to details of student such as name, roll no. and marks by using stacks and pointers.	
+58.		Write a C++ code to enter details of employees such as code no. , name and salary by using queues and pointers.	
+59.		Write a C++ Program to create and display student’s data such as name roll no. and marks stored in file “Stud.dat” .	
+60.		Write a Menu driven program for adding, deleting, displaying, searching and modifying students details such as Name, Roll number and marks in a file “Stud.dat”.	
+61.		To create and display a binary file .	
+62.		To create and display text file.	
+63.		To create, display and count number of words in a text file.	
+64.		Write a Menu driven program for adding, deleting, displaying, searching and modifying students details such as Name, Roll number and marks in a file “Stud.dat”.	
+65.		WAP to read, display records of employees and to calculate net salary and display it.	
+66.		To read ,and display records of students and then to calculate average marks in 3 subjects.	
+67.		To read ,display and allot stream to a student according to the average marks in 3 subjects.	
+68.		WAP to form matrix and obtain sum of diagnals and sum of elements of upper triangle.	
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM : To convert seconds into hours , minutes and seconds.
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+   clrscr();
+long H,M,S,TS;
+cout<<"ENTER TOTAL TIME IN SECONDS=";
+cin>>TS;
+H=TS/3600;
+S=TS%3600;
+M=S/60;
+S=M%60;
+cout<<"TOTAL TIME="<< H<<"hrs "<< M<<"min "<< S<<"sec "<<endl;
+getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM : To convert inches into foot-inch.
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	long F,I,TL;
+	cout<<"ENTER THE TOTAL LENGTH IN INCHES=";
+	cin>>TL;
+	F=TL/12;
+	I=TL%12;
+	cout<<"TOTAL LENGTH="<< F<< " ft "<< I<<" inches "<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM : To find modulus remainder and quotient while dividing two numbers.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int a,b,c,d;
+	cout<<"DIFFERENCE BETWEEN MODULO REMAINDER AND DIVIDE"<<endl<<endl;
+	cout<<"ENTER THE VALUE OF A=";
+	cin>>a;
+	cout<<"ENTER THE VALUE OF B=";
+	cin>>b;
+	cout<<"THE MODULO REMAINDER(%) OF A AND B="<<a%b<<endl;
+	cout<<"THE QUOTIENT WHEN A IS DIVIDED(/) BY B="<<a/b;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM : To find area of a circle .
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	float r,a;
+	cout<<"Enter radius of circle :";
+	cin>>r;
+	 a=3.14*r*r;
+	 cout<<" Area of circle :"<<a<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM :  Operations on Cylinder .
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	float R,H,V,CSA,TSA;
+
+	cout<<"\n\n\t\tEnter the Radius  : ";
+	cin>>R;
+	cout<<"\n\n\t\tEnter the Height  : ";
+	cin>>H;
+	V=3.14*R*R*H;
+	CSA=2*3.14*R*H;
+	TSA=2*3.14*R*(R+H);
+	cout<<"\n\n\t\t1. Volume of cylinder :"<<V<<"cubic unit"<<endl;
+	cout<<"\n\n\t\t2. CSA of cylinder :"<<CSA<<"sq unit"<<endl;
+	cout<<"\n\n\t\t3. TSA of cylinder :"<<TSA<<"sq unit"<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM :  Operations on Cube .
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{             
+clrscr();
+	float A,V,TSA,CSA;
+	cout<<"MENSURATION OF CUBE"<<endl;
+	cout<<"\n\nENTER SIDE LENGTH=";
+	cin>>A;
+	
+V=A*A*A;
+	TSA=6*A*A;
+	CSA=4*A*A;
+	
+cout<<"\nVolume OF CUBE="<<V<< "cu.cm"<<endl;
+	cout<<"\nTSA OF CUBE="<<TSA<< "sq.cm"<<endl;
+	cout<<"\nCSA OF CUBE="<<CSA<< "sq.cm"<<endl;
+	
+getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  Calculator  
+#include<iostream.h>
+#include<conio.h>
+void main()
+{              
+clrscr();
+	float A,B;
+	cout<<"CALCULATOR";
+	cout<<"ENTER THE VALUE OF A=";
+	cin>>A;
+	cout<<"ENTER THE VALUE OF B=";
+	cin>>B;
+	cout<<"SUM OF NUMBERS="<<A+B<<endl;
+	cout<<"DIFFERENCE OF NUMBERS="<<A-B<<endl;
+	cout<<"PRODUCT OF NUMBERS="<<A*B<<endl;
+	cout<<"QUOTIENT OF NUMBER="<<A/B<<endl;
+	cout<<"REMAINDER OF NUMBERS="<<(int)A%(int)B<<endl;
+	getch();
+}  
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM :  Operations of Cuboid.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	float L,B,H,V,CSA;
+	cout<<"MENSURATION ON CUBOID"<<endl;
+	cout<<"\nENTER LENGTH=";
+	cin>>L;
+	cout<<"\nENTER HEIGHT=";
+	cin>>H;
+	cout<<"\nENTER BREATH=";
+	cin>>B;
+	V=L*B*H;
+	CSA=2*H*(L+B);
+	cout<<"\n\nVOLUME OF CUBOID= "<<V<< "cu.cm"<<endl;
+	cout<<"\nCSA OF CUBOID="<<CSA<< "sq.cm"<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: Calculating simple interest.
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	float P,R,T,SI;
+	cout<<"Enter the principle=";
+	cin>>P;
+	cout<<"Enter the rate of interest=";
+	cin>>R;
+	cout<<"Enter the time=";
+	cin>>T;
+	SI=P*R*T/100;
+	cout<<"Simple Interest="<<SI<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM :  Use of Increament operator.
+
+#include<<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	int A,B;
+	cout<<"ENTER THE VALUE OF A= ";
+	cin>>A;
+	B=++A +A++;
+	cout<<"VALUE OF B= "<<B<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To find HCF of two numbers.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int m,n,r,di,dv,h;
+	cout<<" Enter Two numbers:";
+	cin>>m>>n;
+	if(m>n)
+	{
+	               dv=m;
+	               di=n;
+	  }
+	else
+	{
+	               dv=n;
+	               di=m;
+	 }
+
+       r=dv%di;
+       while(r!=0)
+       {
+		dv=di;
+		di=r;
+		r=dv%di;
+	}
+	h=di;
+	cout<<" HCF="<<h<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: Calculating average marks.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	float M1,M2,M3,AVG;
+	cout<<"AVERAGE MARKS "<<endl;
+	cout<<"ENTER MARKS IN PHYSICS=";
+	cin>>M1;
+	cout<<"ENTER MARKS IN CHEMISTRY=";
+	cin>>M2;
+	cout<<"ENTER MARKS IN MATHS=";
+	cin>>M3;
+	AVG=(M1+M2+M3)/3;
+	cout<<"AVERAGE MARKS="<<AVG<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM :  Calculating bonus of an employee with from weekly sale.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{             clrscr();
+	long int a1,a2,a3,a4,a5,a6,a7,avg,s1,s2,s3;
+	cout<<"\n\n\t\tCALCULATING BONUS";
+	cout<<"\n\n\tEnter sale in day 1=";
+	cin>>a1;
+	cout<<"\n\tEnter sale in day 2=";
+	cin>>a2;
+	cout<<"\n\tEnter sale in day 3=";
+	cin>>a3;
+	cout<<"\n\tEnter sale in day 4=";
+	cin>>a4;
+	cout<<"\n\tEnter sale in day 5=";
+	cin>>a5;
+	cout<<"\n\tEnter sale in day 6=";
+	cin>>a6;
+	cout<<"\n\tEnter sale in day 7=";
+	cin>>a7;
+	avg=(a1+a2+a3+a4+a5+a6+a7)/7;
+	cout<<"\n\n\tYour average weekly sale is = Rs. "<<avg<<endl;
+	if(avg>=75000)
+	{s1=(10*avg)/100;
+	cout<<"\n\n\tYour bonus = Rs. "<<s1<<endl;
+}             else
+	if(avg>=50000)
+	{s2=(7*avg)/100;
+	cout<<"\n\n\tYour bonus = Rs. "<<s2<<endl;
+}             else
+	if(avg>=25000)
+	{s3=(4*avg)/100;
+	cout<<"tour bonus is=Rs."<<s3<<endl;
+}             else
+	cout<<"No bonus";
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM : Calculate area of triangle using herons formulae.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+	clrscr();
+	long double S,A,HF,B,C;
+	cout<<"AREA OF TRIANGLE UNDER HERON'S FORMULAE"<<endl;
+	cout<<"ENTER THE VALUE OF A="<<endl;
+	cin>>A;
+	cout<<"ENTER THE VALE OF B="<<endl;
+	cin>>B;
+	cout<<"ENTER THE VALUE OF C="<<endl;
+	cin>>C;
+	S=(A+B+C)/2;
+	HF=sqrt(S*(S-A)*(S-B)*(S-C));
+	cout<<"SEMIPERIMETER="<<S<<endl;
+	cout<<"AREA OF TRIANGLE UNDER HERON'S FORMULAE="<<HF<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: Calculate profit and loss.
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+   clrscr();
+   float c,s,p,l;
+   cout<<"Enter the cost price=   ";
+   cin>>c;
+   cout<<"Enter the selling price=  ";
+   cin>>s;
+   p=(s-c);
+   l=(c-s);
+   if
+   (s>c)
+   cout<<"Profit= "<<p<<endl;
+   else
+   if (c>s)
+   cout<<"Loss= "<<l<<endl;
+   else
+   if
+   (s=p)
+   cout<<" No profit & No loss !!";
+   getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To calculate Molarity of a solution.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+
+{
+	clrscr();
+	float m1,m2,n,M,v;
+	cout<<"\n\n\t\tTO CALCULATE MOLARITY OF A SOLUTION"<<endl;
+	cout<<"\n\n\tENTER THE MASS OF SOLUTE=";
+	cin>>m1;
+	cout<<"\n\tENTER THE VALUE OF MOLECULAR OR ATOMIC MASS OF SOLUTE= ";
+	cin>>m2;
+	cout<<"\n\tENTER THE VOLOUME OF WATER=";
+	cin>>v;
+	n=m1/m2;
+	cout<<"\n\n\tNO.OF MOLES="<<n<<endl;
+	M=n/v;
+	cout<<"\n\n\tMOLARITY="<<M<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: Menu Driven program
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int opt,opt1,opt2,opt3;
+	float r,h,v,csa,tsa,sf,l;
+	cout<<" \n\n\t\t\t WELCOME TO PROGRAM"<<endl;
+	cout<<" \n\n\t\t\t Press 1: To deal with cylinder"<<endl;
+	cout<<" \n\n\t\t\t Press 2: To deal with cone"<<endl;
+	cout<<" \n\n\t\t\t Press 3: To deal with sphere"<<endl;
+	cout<<" \n\n\n\t\t\t Enter your choice :";
+	cin>>opt;
+	clrscr();
+	switch(opt)
+	{
+		case 1 : cout<<" \n\n\t\t\t CYLINDER";
+			 cout<<" \n\n\t\t\t Press 1: To find volume";
+			 cout<<" \n\n\t\t\t Press 2: To find curved surface area ";
+			 cout<<" \n\n\t\t\t Press 3: To find total surface area";
+			 cout<<" \n\n\n\t\t\t Enter your choice :";
+			 cin>>opt1;
+
+			 switch(opt1)
+			 {
+			     case 1:cout<<"\n\n\t\t\t Enter radius and heights :";
+				    cin>>r>>h;
+				    v=3.14*r*r*h;
+				    cout<<" \n\n\t\t\t Volume : "<<v<<" cubic units";
+				    break;
+
+			     case 2:cout<<"\n\n\t\t\t Enter radius and height:";
+				    cin>>r>>h;
+				    csa=2*3.14*r*h;
+				    cout<<"\n\n\t\t\t Curved surface area :"<<csa<<" sq. units" <<endl;
+				    break;
+
+			     case 3:cout<<"\n\n\t\t\t Enter radius and Height :";
+				    cin>>r>>h;
+				    tsa=2*3.14*r*(r+h);
+				    cout<<"\n\n\t\t\t Total surface area :"<<tsa<<" sq. units"<<endl;
+				    break;
+
+			 default : cout<<" \n\n\t\t\t Invalid choice";
+
+
+			  }
+		      break;
+
+		case 2: cout<<" \n\n\t\t\t CONE"<<endl;
+			cout<<" \n\n\t\t\t Press 1: To find volume"<<endl;
+			cout<<" \n\n\t\t\t Press 2: To find curved surface area"<<endl;
+			cout<<" \n\n\t\t\t Press 3: To find total surface area"<<endl;
+			cout<<" \n\n\n\t\t\t Enter your choice :";
+			cin>>opt2;
+			switch(opt2)
+			{
+				case 1:cout<<" \n\n\t\t\t Enter radius and height :";
+				       cin>>r>>h;
+				       v=(1/3)*3.14*r*r*h;
+				       cout<<" \n\n\t\t\t Volume : "<<v<<" cubic units";
+				       break;
+
+				case 2:cout<<" \n\n\t\t\t Enter radius and slant :";
+				       cin>>r>>l;
+				       csa=3.14*r*l;
+				       cout<<" Curved surface area :"<<csa<<" sq. units"<<endl;
+				       break;
+				case 3:cout<<" \n\n\t\t\t Enter radius and slant height :";
+				       cin>>r>>l;
+				       tsa=3.14*r*(r+l);
+				       cout<<" \n\n\t\t\t Total surface area :"<<tsa<<" sq. units"<<endl;
+				       break;
+
+				default: cout<<" \n\n\t\t\t Invalid choice"<<endl;
+
+			    }
+
+			    break;
+
+
+		  case 3: cout<<" \n\n\t\t\t SPHERE"<<endl;
+			  cout<<" \n\n\t\t\t Press 1: To find volume"<<endl;
+			  cout<<" \n\n\t\t\t Press 2: To find surface area "<<endl;
+			  cout<<" \n\n\n\t\t\t Enter your choice :";
+			  cin>>opt3;
+
+			  switch(opt3)
+			  {
+				case 1: cout<<" \n\n\t\t\tEnter radius :";
+					cin>>r;
+					v=(4/3)*3.14*r*r*r;
+					cout<<" Volume :"<<v<<" cubic units"<<endl;
+					break;
+
+				case 2: cout<<" \n\n\t\t\t\ Enter radius :";
+					cin>>r;
+					sf=4*3.14*r*r;
+					cout<<" \n\n\t\t\t Surface area :"<<sf<<" sq. units"<<endl;
+					break;
+				default : cout<<" \n\n\t\t\t Invalid choice"<<endl;
+
+
+				 }
+				 break;
+				 default: cout<<" \n\n\t\t\t Invalid choice"<<endl;
+		       }
+		       getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To calculate roots of the equation.
+#include<"iostream.h>
+#include<conio.h>
+
+
+void main()
+{
+	clrscr();
+	double a,b,c,x1,x2,d;
+	cout<<"Finding roots of equation (x1 and x2)"<<endl;
+	cout<<"Enter the value of a=";
+	cin>>a;
+	cout<<"Enter the value of b=";
+	cin>>b;
+	cout<<"Enter the value of c =";
+	cin>>c;
+	d=b*b -(a*c+a*c+a*c+a*c);
+	if
+	(d<0)
+	cout<<"sorry we cannot calculte the roots as they are non real/imaginary";
+	else
+
+	x1=(-b+sqrt(d))/(a+a) ;
+	x2=(-b-sqrt(d))/(a+a) ;
+	cout<<"roots of the equation are:_"<<endl<<"x1="<<x1<<endl<<"x2="<<x2;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  Grade calculator.
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{	clrscr();
+	float m1,m2,m3,m4,m5,avg;
+	char grade;
+	cout<<"ENTER MARKS IN MATHS=";
+	cin>>m1;
+	cout<<"ENTER MARKS IN ENGLISH=";
+	cin>>m2;
+	cout<<"ENTER MARKS IN PHYSICS=";
+	cin>>m3;
+	cout<<"ENTER MARKS IN CHEMITSTRY=";
+	cin>>m4;
+	cout<<"ENTER MARKS IN COMPUTERS=";
+	cin>>m5;
+	avg=(m1+m2+m3+m4+m5)/5;
+	if  (avg>=90)
+	grade='A';
+	else
+	if   (avg>=75)
+	grade='B';
+	else
+	if   (avg>=60)
+	grade='C';
+	else
+	if   (avg>=50)
+	grade='D';
+	else
+	if   (avg>='30')
+	grade='E';
+	else
+	grade='F';
+	cout<<"YOUR AVERAGE MARKS=" << avg<<endl;
+	cout<<"YOUR GRADE="<< grade<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To calculate sum of the digits of a given number.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	int num,r,sum=0;
+	cout<<" ENTER THE NUMBER WHOSE DIGIT SUM YOU WANT :";
+	cin>>num;
+
+	while(r!=0)
+	{
+	r=num%10;
+	sum+=r;
+	num=num/10;
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate electricity bill on the basis of units consumed.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	float u,amt;
+	cout<<"\n\n\t\t\t Enter units consumed :";
+	cin>>u;
+	if(u<=100)
+	amt=u*2;
+	else
+	if(u<=300)
+	amt=100*2+(u-100)*3;
+	else
+	if(u<=500)
+	amt=100*2+200*3+(u-300)*4;
+	else
+	amt=100*2+200*3+200*4+(u-500)*6;
+	cout<<"\n\n\t\t\t Electricity Bill : "<<amt<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate largest number among four given number.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int a,b,c,d,l;
+	cout<<"\n\n\t\tEnter four numbers : ";
+	cin>>a>>b>>c>>d;
+	if (a>b && a>b && a>c)
+	l=a;
+	else
+	if(b>c && c>d)
+	l=b;
+	else
+	if(c>d)
+	l=c;
+	else
+	l=d;
+	cout<<"\n\n\t\tLarger number is "<<l<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate the number giv en is even or odd.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	long int n;
+	cout<<"\n \n\t\tOdd and Even Checker"<<endl;
+	cout<<"\n\n\tEnter the number you want to check=";
+	cin>>n;
+	if(n%2>0)
+	cout<<"\n\tIt is an odd number";
+	else
+	cout<<"\n\tIt is an even number";
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To check whether the given number is a palindrome or not.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+
+	int n,gnum,digit,rev=0;
+     do{
+	cout<<" Enter the number :";
+	cin>>n;
+	}
+	while(n<=0);
+	if(n<=0)
+	gnum=n;
+
+	while(n!=0)
+	{
+		digit=n%10;
+		rev=rev*10+digit;
+		n=n/10;
+	}
+
+
+	cout<<" Reversed number :"<<rev<<endl;
+
+	if(gnum==rev)
+	{
+	   cout<<" \n\t It's a Palindrome";
+	}
+	else
+	{
+	    cout<<" It is not a palindrome ";
+	}
+
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To identify a given number as prime or composite.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+	clrscr();
+	int num;
+
+	cout<<" \n\n\t\tENTER THE NUMBER WHICH YOU WANT TO CHECK =";
+	cin>>num;
+	if (num==1)
+	{
+	cout<<"\n\n\t\tNEITHER PRIME NOR COMPOSITE "<<endl;
+	getch();
+	return;
+	}
+	int prime=1;
+	int S=sqrt(num);
+	for(int i=2;i<=S;i++)
+	{
+	if(num%i==0)
+	{
+	prime=0;
+	break;
+	}
+	}
+	switch(prime)
+	{
+		case 0:cout<<"\n\n\t\t\t THE NUMBER IS A COMPOSITE"<<endl;
+		       break;
+		default :cout<<"\n\n\t\t IT IS A PRIME NUMBER"<<endl;
+			 break;
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate tution fees of a students with respect to the class he/she studies.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	int c,f;
+	cout<<"\n\n\tQuarterly tution fees calculator"<<endl;
+	cout<<"\n\tEnter the class in which the student study=";
+	cin>>c;
+	if(c<=5)
+	{f=4*1000;
+	cout<<"\n\n\tYour tution fees is =Rs."<<f<<endl;
+	}
+	else
+	if(c<=7)
+	{f=4*1500;
+	cout<<"\n\n\tYour tution fees is =Rs."<<f<<endl;
+	}
+	else
+	if(c<=10)
+	{
+	f=4*2000;
+	cout<<"\n\n\tYour tution fees is =Rs."<<f<<endl;
+	}
+	else
+	{f=4*2500;
+	cout<<"\n\n\tYour tution fees is =Rs."<<f<<endl;
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To swap the values of two given number by using a third variable.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+int G=5;             //global variable                      
+
+void swap(int &m , int &n)
+{
+	int T=m;    //local variable
+	m=n;
+	n=T;
+}
+
+void main()
+{
+	clrscr();
+	int A=10,B=20;
+	A=A+G;
+	cout<<"\n\n\n\t\t\tA = "<<A<<" "<<"B = "<<B<<endl;
+
+	swap(A,B);
+
+	cout<<"\n\n\n\t\t\tA = "<<A<<" "<<"B = "<<B<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To print ‘N’ natural numbers as per user needs.
+
+#include<iostream.h>
+#include<conio.h>
+
+void main()
+{
+	clrscr();
+	int a=1,i;
+	cout<<"AIM:TO PRINT NATUARAL NUMBERS AS PER THE USER NEEDS"<<endl;
+	cout<<"enter the number till where you want to print= ";
+	cin>>i;
+	while(a<=i)
+	{  cout <<  a  <<" \t";
+	   a++;
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate sum of the given series.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+
+float SUMSERIES(float X,int N);
+
+void main()
+{
+	clrscr();
+	float x,sum;
+	int n;
+	cout<<"\n\n\n\tTO CALCULATE THE SUM OF SERIES ";
+	cout<<"\n\n\t\tENTER THE VALUE OF X : ";
+	cin>>x;
+	cout<<"\n\n\t\tENTER THE NO. OF TERMS : ";
+	cin>>n;
+
+	SUMSERIES(x,n);
+	cout<<"\n\n\tSUM OF "<<n<<" TERMS OF SERIES = "<<sum<<endl;
+	getch();
+}
+float SUMSERIES(float X,int N)
+{
+	float sum=0,term;
+	for(int i=1;i<=N;i++)
+	{
+		term=pow(X,2*i-1)/(2*i);
+		sum+=term;
+	}
+	return(sum);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: TO calculate the sum of the series 
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+	clrscr();
+	float x,sum=0,term;
+	int n,i;
+	cout<<"TO CALCULATE SUM OF SERIES : X/1 - X^3/3 + x^5/5 - ...... + X^n/n"<<endl;
+	cout<<" \n\n\n\t\tENTER THE VALUE OF X :";
+	cin>>x;
+	cout<<" \n\t\tENTER THE NUMBER OF TERMS :";
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+	term=(pow(x,2*i-1)*pow(-1,i+1));
+	sum+=term;
+	}
+	cout<<"\n\t\tsum of first "<<n<<" terms ="<<sum<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate the sum of the series.
+ 
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+	clrscr();
+	long int n,i,nf,term,sum=0;
+	float x;
+	cout<<" \n\n\t\t SUM OF SERIES : x+x^2/2!.....";
+	cout<<" \n\n\t\t Enter the no. of terms :";
+	cin>>n;
+	cout<<" \n\n\t\t Enter the value of x :";
+	cin>>x;
+	if(n<0)
+	cout<<" \n\n\t\t Invalid choice ";
+	else
+	{
+	i=1;
+
+	while(i<=n)
+	{
+		 nf = 1;
+	       {	for (int j=1; j<=n; j++)
+
+		     nf=nf*j;
+		     }
+		term=pow(x,i)/nf;
+		sum=sum+term;
+		i++;
+	}
+	cout<<" \n\n\t\t sum of "<<n<<" of series is :"<<sum;
+	}
+	getch();
+}
+OUTPUT:
+ 
+AIM:  Let user enter any numbers and then find largest and second largest numbers from the list.
+
+#include<iostream.h>
+#include<conio.h>
+#define size 1000
+
+void MAXMIN ( int A[] , int N )
+{
+	int MAX =A[0],SMAX=A[0];
+	for ( int i=1; i<=N-1;i++)
+	{
+		if(A[i] >MAX)
+		{
+		SMAX = MAX;
+		MAX= A[i];
+		}
+
+		else
+			if(SMAX==MAX||A[i]>SMAX)
+			SMAX=A[i];
+	}
+	cout<<"\n\n\t\tLARGEST NUMBER : "<<MAX<<endl;
+	cout<<"\n\n\t\tSECOND LARGEST NUMBER : "<<SMAX<<endl;
+}
+
+void main()
+{
+	clrscr();
+	int A[size];
+	int V;
+	cout<<"\n\n\t\t ENTER THE NUMBER OF ELEMENTS : ";
+	cin>>V;
+	for (int i=0;i<V;i++)
+	{
+		cout<<"\n\t\tENTER THE "<<i+1<<" th ELEMENT OF ARRAY : ";
+		cin>>A[i];
+	}
+	for (int j=0;j<V;j++)
+	{
+	cout<<"\t"<<A[j] <<" ";
+	}
+	cout<<"\n\n\n";
+	MAXMIN(A,V);
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To reverse the numbers or the values stored in the given array.
+
+#include<iostream.h>
+#include<conio.h>
+#define size 10000
+
+void REV( int A[] , int N )
+{
+	int mid=N/2;
+	int j=N-1;
+	for(int i =0;i<=mid-1;i++,j--)
+	{
+		int T =A[i];
+		A[i]=A[j];
+		A[j]=T;
+	}
+}
+
+void main()
+{
+	clrscr();
+	int A[size],V;
+	cout<<"\n\n\t\t ENTER THE NUMBER OF ELEMENTS : ";
+	cin>>V;
+	for (int i=0;i<V;i++)
+	{
+		cout<<"\n\t\tENTER THE "<<i+1<<" th ELEMENT OF ARRAY : ";
+		cin>>A[i];
+	}
+	for (int j=0;j<V;j++)
+	{
+	cout<<"\t"<<A[j] <<" ";
+	}
+	cout<<"\n\n\n";
+	REV(A,V);
+	for (int k=0;k<V;k++)
+	{
+	cout<<"\t"<<A[k] <<" ";
+	}
+	getch();
+}   
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To reverse the number entered by the user.
+
+#include<iostream.h>
+#include<conio.h>
+
+int reversed(int n);
+void main()
+{
+	clrscr();
+	int n,rev,digit;
+	cout<<" Enter the number ";
+	cin>>n;
+	rev=reversed(n);
+	cout<<" Reversed number :"<<rev<<endl;
+	getch();
+}
+
+	int reversed(int n)
+	{
+		int rev=0,digit;
+
+		while(n!=0)
+		{
+			digit=n%10;
+			rev=rev*10+digit;
+			n=n/10;
+		}
+		return(rev);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To calculate simple interest (with the use of functions ).
+
+#include<iostream.h>
+#include<conio.h>
+float interest(float p,float r,float t);
+void main()
+{
+	clrscr();
+	float  p,r,t;
+	float si;
+	cout<<" Enter principle amount :";
+	cin>>p;
+	cout<<" Enter rate of interest :";
+	cin>>r;
+	cout<<" Enter time period :";
+	cin>>t;
+	si=interest(p,r,t);
+	cout<<" Simple interest :"<<si<<endl;
+	getch();
+}
+	float interest(float p,float r, float t)
+	{
+		float si;
+		si=(p*r*t)/100;
+		return(si);
+	}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To tell whether a number is prime or composite (with functions).
+ 
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+int isprime(int n);
+
+void main()
+{
+	clrscr();
+	int num;
+	cout<<"\n\n\t\tENTER THE NUMBER : ";
+	cin>>num;
+
+	if(num==1)
+	cout<<"\n\n\tTHE NUMBER IS NEITHER PRIME NOR COMPOSITE ";
+	else
+	{
+
+	int p=isprime(num);
+
+	if (p==1)
+		cout<<num<<"\n\n\n\n\t\t\t IS A PRIME NUMBER ";
+	else
+		cout<<num<<"\n\n\n\n\rt\t\t IS A COMPOSITE NUMBER ";
+	}
+	getch();
+}
+
+int isprime( int n )
+{
+
+	int S = sqrt(n);
+	int prime=1;
+	for(int i=2;i<=S;i++)
+	{
+		if(n%i==0)
+		{
+			prime=0;
+			break;
+		}
+	}
+	return(prime);
+
+
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate no. of permutations and combinations for ‘N’ objects taking ‘R’ at a time.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{      clrscr();
+       long int i,n,nf,nrf,r,rf,npr,ncr;
+       cout<<" Enter the value of  N :";
+       cin>>n;
+       cout<<" Enter the value of R :";
+       cin>>r;
+       nf=1;
+
+       for(i=1;i<=n;i++)
+       {
+       nf*=i;
+       }
+       rf=1;
+       for(i=1;i<=r;i++)
+       {
+       rf*=i;
+       }
+       nrf=1;
+       for(i=1;i<=n-r;i++)
+       {
+       nrf*=i;
+       }
+       npr=nf/nrf;
+       ncr=npr/rf;
+       cout<<" No. of permutations of "<<n<<" objects taken "<<r<<" at a time :"<<npr<<endl;
+       cout<<" No. of combinations of "<<n<<" objects selected "<<r<<" at a time :"<<ncr<<endl;
+       getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To perform operations on cylinder (menu driven) using functions.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+void MENU();
+void VOL();
+void CSA();
+void TSA();
+
+void main()
+{
+	int opt;
+	do
+	{
+	MENU();
+	cout<<"\t\t\n\nENTER YOUR CHOICE :  ";
+	cin>>opt;
+
+	switch(opt)
+	{
+	case 1 :VOL();
+		break;
+	case 2 :CSA();
+		break;
+	case 3 :TSA();
+		break;
+	case 4 :cout<<"\n\n\n\t\t\tGOOD BYE ";
+		break;
+	default :cout<<"\t\t\n\n\nINVALID CHOICE ";
+	}
+	getch();
+	}while(opt!=4);
+}
+
+void MENU()
+{
+	cout<<"\n\n\n\t\t\t\t\nMAIN MENU";
+	cout<<"\t\t\nPRESS 1 : TO CALCULATE VOLUME ";
+	cout<<"\t\t\nPRESS 2 : TO CALCULATE CURVED SURFACE AREA ";
+	cout<<"\t\t\nPRESS 3 : TO CALCULATE TOTAL SURFACE AREA  ";
+	cout<<"\t\t\nPRESS 4 : TO EXIT ";
+	getch();
+}
+
+void VOL()
+{
+	float R,H,V;
+	cout<<"\n\n\tENTER THE RADIUS OF CYLINDER ; ";
+	cin>>R;
+	cout<<"\n\n\tENTER THE HEIGHT OF CYLINDER : ";
+	cin>>H;
+	V=3.14*R*R*H;
+	cout<<"\n\n\t VOLUME OF CYLINDER : "<<V<<" cu.cm"<<endl;
+	getch();
+}
+
+void CSA()
+{
+	float R,H,csa;
+	cout<<"\n\n\tENTER THE RADIUS OF CYLINDER ; ";
+	cin>>R;
+	cout<<"\n\n\tENTER THE HEIGHT OF CYLINDER : ";
+	cin>>H;
+	csa=2*3.14*R*H;
+	cout<<"\n\n\t CURVED SURVACE AREA OF CYLINDER : "<<csa<<" sq.cm"<<endl;
+	getch();
+}
+void TSA()
+
+{
+	float R,H,tsa;
+	cout<<"\n\n\tENTER THE RADIUS OF CYLINDER ; ";
+	cin>>R;
+	cout<<"\n\n\tENTER THE HEIGHT OF CYLINDER : ";
+	cin>>H;
+	tsa=2*3.14*R*(R+H);
+	cout<<"\n\n\t TOTAL SURFACE AREA OF CYLINDER : "<<tsa<<" sq.cm"<<endl;
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate and display Multiplication table of any number.
+
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int n,i,a;
+	cout<<" Enter no. of multiplicants :";
+	cin>>a;
+
+	cout<<" Enter the number :";
+	cin>>n;
+	clrscr();
+	cout<<" Multiplication table of "<<n<<" is :";
+	i=1;
+	while(i<=a)
+	{
+	    cout<<n<<" X "<<i<<" = "<<n*i<<endl;
+	    i++;
+	}
+
+	 getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To calculate sum of ‘N’ odd natural numbers.
+
+#include<iostream.h>
+#include<conio.h>
+
+int sumseries(int  n);
+
+void main()
+{
+
+	clrscr();
+	int n,sum,term;
+	cout<<" \n\n\t\tSUM OF FIRST 'N' ODD NATURAL NO.S"<<endl;
+	cout<<" \n\n\t\tEnter the no. of terms whose sum u want :";
+	cin>>n;
+	sum = sumseries(n);
+	cout<<" \n\n\t\tSum of first"<<n<<" odd natural no.s :"<<sum<<endl;
+	getch();
+
+
+
+}
+
+	int sumseries(int n)
+	{
+		int sum=0,term,i=1;
+		while(i<=n)
+		{
+		     term=2*i-1;
+		     sum=sum+term;
+		     i++;
+		}
+
+		return(sum);
+	}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  Menu-Driven program.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+	clrscr();
+	int a,b,sum,difference,product,quotient,square1,square2,cube1,cube2,squareroot1,squareroot2,remainder,r,h,v1,tsa1,csa1,side,v2,tsa2,csa2,choice1,opt1,opt2,opt3,l,B,d,csa3,tsa3,v3,opt4,opt5,opt6,r2,v4,tsa4,v5,csa5,tsa5,r3,h2;
+	cout<<"\n\t\twelcome to maths lab"<<endl;
+	cout<<"press 1 :for mathamatical operations"<<endl;
+	cout<<"press 2 :for operations on cylinder"<<endl;
+	cout<<"press 3 :for operations on cube"<<endl;
+	cout<<"press 4 :for operations on cuboid"<<endl;
+	cout<<"press 5 :for operatiins on sphere"<<endl;
+	cout<<"press 6 :for operations on cone"<<endl;
+	cout<<"press 6 :for operations on hemisphere"<<endl;
+	cout<<"\nenter your choice=";
+	cin>>choice1;
+	switch(choice1)
+	{
+	case 1:clrscr();
+	       cout<<"\t\t\tmathematical operations"<<endl<<endl<<endl;
+	       cout<<"\n\nenter two numbers";
+	       cin>>a>>b;
+	       cout<<"\npress 1 :to add them"<<endl;
+	       cout<<"press 2 :to subtract them"<<endl;
+	       cout<<"press 3 :to multiply them"<<endl;
+	       cout<<"press 4 :to find their quotient"<<endl;
+	       cout<<"press 5 :to find their remainder"<<endl;
+	       cout<<"press 6 :to calculate square"<<endl;
+	       cout<<"press 7 :to calculate square root"<<endl;
+	       cout<<"press 8 :to calculate cube"<<endl;
+	       cout<<"\nenter your choice=";
+	       cin>>opt1;
+	       switch(opt1)
+	       {
+	       case 1:sum=a+b;
+		      cout<<"sum is ="<<sum<<endl;
+		      break;
+	       case 2:difference=a-b;
+		      cout<<"their differnece is ="<<difference;
+		      break;
+	       case 3:product=a*b;
+		      cout<<"their product is="<<product;
+		      break;
+	       case 4:quotient=a/b;
+		      cout<<"their quotient is ="<<quotient;
+		      break;
+	       case 5:remainder=(int)a%(int)b;
+		      cout<<"their remainder is ="<<remainder;
+		      break;
+	       case 6:square1=a*a;square2=b*b;
+		      cout<<"their squares are :"<<square1<<"  and  "<<square2;
+		      break;
+	       case 7:squareroot1=sqrt(a);squareroot2=sqrt(b);
+		      cout<<"their square roots are :"<<squareroot1<<"  and  "<<squareroot2;
+		      break;
+	       case 8:cube1=a*a*a;cube2=b*b*b;
+		      cout<<"their cube are :"<<cube1<<"  and "<<cube2;
+		      break;
+	       default :cout<<"invalid choice";
+	       }
+	       break;
+	case 2:clrscr();
+	       cout<<"\n\n\ncylinder"<<endl<<endl<<endl;
+	       cout<<"\npress 1 :to calculate curved area"<<endl;
+	       cout<<"press 2 :to calculate total area"<<endl;
+	       cout<<"press 3 :to calculate volume"<<endl;
+	       cout<<"enter your choice";
+	       cin>>opt2;
+	       cout<<"enter radius and height of cylinder";
+	       cin>>r>>h;
+	       switch(opt2)
+	       {
+	       case 1:csa1=2*3.14*r*h;
+		      cout<<"curved area ="<<csa1<<" sq.unit"<<endl;
+		      break;
+	       case 2:tsa1=2*3.14*r*(r+h);
+		      cout<<"total area ="<<tsa1<<" sq.unit"<<endl;
+		      break;
+	       case 3:v1=3.14*r*h;
+		      cout<<"volume ="<<v1<<" cubic unit"<<endl;
+		      break;
+	       default :cout<<"invalid choice";
+	       }
+	       break;
+	case 3:clrscr();
+	       cout<<"\n\n\ncube "<<endl<<endl<<endl;
+	       cout<<"\npress 1 :to find curved area"<<endl;
+	       cout<<"press 2 :to find total area"<<endl;
+	       cout<<"press 3 :to find volume"<<endl;
+	       cout<<"enter your choice ";
+	       cin>>opt3;
+	       cout<<"enter the side length of the cube";
+	       cin>>side;
+	       switch(opt3)
+	       {
+	       case 1:csa2=4*side*side;
+		      cout<<"curved area ="<<csa2<<" sq.unit"<<endl;
+		      break;
+	       case 2:tsa2=6*side*side;
+		      cout<<"total area ="<<tsa2<<" sq.unit"<<endl;
+		      break;
+	       case 3:v2=side*side*side;
+		      cout<<"volume="<<v2<<" cubic unit"<<endl;
+		      break;
+	       default :cout<<"invalid choice"<<endl;
+	       }
+	       break;
+	case 4:clrscr();
+	       cout<<"\n\n\ncuboid"<<endl<<endl<<endl;
+	       cout<<"\npress 1:for curved area"<<endl;
+	       cout<<"press 2:for total area"<<endl;
+	       cout<<"press 3:for volume"<<endl;
+	       cout<<"enter your choice=";
+	       cin>>opt4;
+	       cout<<"enter length,breadth and height=";
+	       cin>>l>>B>>d;
+	       switch(opt4)
+	       {
+	       case 1:csa3=2*(l*B+B*h);
+		      cout<<"curved area ="<<csa3<<" sq.unit"<<endl;
+		      break;
+	       case 2:tsa3=2*(l*B+B*h+l*h);
+		      cout<<"total area="<<tsa3<<" sq.unit"<<endl;
+		      break;
+	       case 3:v3=l*B*h;
+		      cout<<"volume ="<<v3<<" cubic unit"<<endl;
+		      break;
+	       default :cout<<"invalid choice"<<endl;
+	       }
+	       break;
+	case 5:clrscr();
+	       cout<<"\n\n\nsphere"<<endl<<endl<<endl;
+	       cout<<"press 1:to calculate volume"<<endl;
+	       cout<<"press 2:to calculate total area "<<endl;
+	       cout<<"enter your choice";
+	       cin>>opt5;
+	       cout<<"enter radius";
+	       cin>>r2;
+	       switch(opt5)
+	       {
+	       case 1:v4=4*3.14*r2*r2*r2/3;
+		      cout<<"volume ="<<v4<<" cubic unit";
+		      break;
+	       case 2:tsa4=4*3.14*r2*r2;
+		      cout<<"total area ="<<tsa4<<" sq.cm";
+		      break;
+	       }
+	       break;
+	case 6:clrscr();
+	       cout<<"\n\n\ncone"<<endl<<endl<<endl;
+	       cout<<"press 1:to calculate volume"<<endl;
+	       cout<<"press 2:to calculate curved area "<<endl;
+	       cout<<"press 3:to calculate total area "<<endl;
+	       cout<<"enter your choice";
+	       cin>>opt6;
+	       cout<<"enter radius and height";
+	       cin>>r3>>h2;
+
+	       switch(opt6)
+	       {
+	       case 1:v5=3.14/3*r3*r3*h2;
+		      cout<<"volume is ="<<v5<<" cubic unit";
+		      break;
+	       case 2:csa5=(sqrt(r3*r3+h2*h2)*3.1*r3;
+		      cout<<"curved area ="<<csa5<<" sq.cm";
+		      break;
+	       case 3:tsa5=csa5+(3.1*r3*r3);
+		      cout<<"total area ="<<tsa5<<" sq.cm";
+		      break;
+	       }
+	       break;
+
+
+	default :cout<<"invalid choice"<<endl;
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To find the maximum and minimum element from an array of ‘N’ numbers entered by the user.
+
+#include<iostream.h>
+#include<conio.h>
+#define size 1000
+
+void MAXMIN(int A[] , int N)
+{
+	int MX,MN;
+	MX=MN=A[0];
+	for(int i=1;i<=N-1;i++)
+	{
+		if(MX<A[i])
+			MX=A[i];
+		else
+			if(MN>A[i])
+				MN=A[i];
+	}
+	cout<<"\n\nTHE LARGEST NUMBER IS : "<<MX<<endl;
+	cout<<"\n\nTHE SMALLEST NUMBER IS : "<<MN<<endl;
+}
+
+void main()
+{
+	clrscr();
+	int A [size],V;
+	cout<<"\n\n\t\t ENTER THE NUMBER OF ELEMENTS : ";
+	cin>>V;
+	for (int i=0;i<V;i++)
+	{
+		cout<<"\n\t\tENTER THE "<<i+1<<" th ELEMENT OF ARRAY : ";
+		cin>>A[i];
+	}
+	for (int j=0;j<V;j++)
+	{
+	cout<<"\t\t"<<A[j] <<" "<<endl;
+	}
+	cout<<"\n\t\t";
+	MAXMIN(A,V);
+	getch();
+} 
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To find HCF of two numbers using functions.
+
+#include<iostream.h>
+#include<conio.h>
+
+int HCF(int m,int n);
+void main()
+{
+	clrscr();
+	int m,n,hcf,dividend,divisor,rem;
+	cout<<" Enter two no.s :";
+	cin>>m>>n;
+
+   hcf    =HCF(m,n);
+	   cout<<" HCF of 2 no.s :"<<hcf<<endl;
+	   getch();
+}
+int HCF(int m,int n)
+	{
+	int hcf,dividend,divisor,rem;
+	if(m>n)
+	{	dividend=m;
+		divisor=n;
+	}
+	else
+	{	dividend=n;
+		divisor=m;
+	}
+rem=dividend%divisor;
+		while(rem!=0)
+		{
+			rem=dividend%divisor;
+			dividend=divisor;
+			divisor=rem;
+		}
+hcf=divisor;
+		return(hcf);
+}
+
+OUTPUT:
+ 
+
+AIM: To calculate factorial of a given number. 
+
+#include<iostream.h>
+#include<conio.h>
+long int factorial( int n);
+void main()
+{
+	clrscr();
+	long int f,n;
+	cout<<" Enter the number :";
+	cin>>n;
+	f=factorial(n);
+	cout<<" Factorial of "<<n<<" is :"<<f<<endl;
+	getch();
+}
+      long int factorial(int n)
+	{
+	      long int f=1,i=1;
+		while(i<=n)
+		{
+		   f=f*i;
+		   i++;
+		}
+
+		return(f);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  Calculator for basic mathematical operations (via use of functions).
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+void SUM()
+{
+	clrscr();
+	int N;
+	int term,sum=0;
+	cout<<"\n\n\t\t\tSUM CALCULATOR ";
+	cout<<"\n\n\t\tHOW MANY NUMBERS DO YOU WANT TO ADD : ";
+	cin>>N;
+	for(int i=1;i<=N;i++)
+	{
+		cout<<"\n\n\t\t ENTER A NUMBER : ";
+		cin>>term;
+		sum+=term;
+	}
+	cout<<"\n\n\t\tSUM OF THE TERMS = "<<sum<<endl;
+	getch();
+}
+
+void MULT()
+{
+	clrscr();
+	int N;
+	int term,pro=1;
+	cout<<"\n\n\t\t\tPRODUCT CALCULATOR ";
+	cout<<"\n\n\t\tHOW MANY NUMBERS DO YOU WANT TO MULTIPLY : ";
+	cin>>N;
+	for(int i=1;i<=N;i++)
+	{
+		cout<<"\n\n\t\t ENTER A NUMBER : ";
+		cin>>term;
+		pro*=term;
+	}
+	cout<<"\n\n\t\tPRODUCT OF THE TERMS = "<<pro<<endl;
+	getch();
+}
+
+void DIVI()
+{
+	clrscr();
+	int N;
+	int term,quo;
+	cout<<"\n\n\t\t\tQUOTIENT CALCULATOR ";
+	cout<<"\n\n\t\tHOW MANY NUMBERS DO YOU WANT TO DIVIDE : ";
+	cin>>N;
+	for(int i=1;i<=N;i++)
+	{
+		cout<<"\n\n\t\t ENTER A NUMBER : ";
+		cin>>term;
+		quo/=term;
+	}
+	cout<<"\n\n\t\tFINAL QUOTIENT OF THE TERMS = "<<quo<<endl;
+	getch();
+}
+
+
+
+void main()
+{
+	clrscr();
+	int opt;
+	cout<<"\n\n\t\t\tCALCULATOR";
+	cout<<"\n\n\t\tPRESS 1 : TO ADD ";
+	cout<<"\n\n\t\tPRESS 2 : TO MULTIPLY ";
+	cout<<"\n\n\t\tPRESS 3 : TO DIVIDE ";
+	cout<<"\n\n\t\tPRESS 4 : TO EXIT ";
+	cout<<"\n\n\tENTER YOUR CHOICE : ";
+	cin>>opt;
+
+	switch(opt)
+	{
+		case 1 :SUM();
+			break;
+		case 2 :MULT();
+			break;
+		case 3 :DIVI();
+			break;
+		case 4 :cout<<"\n\n\tTHANK YOU ";
+			break;
+		default:cout<<"\n\n\tINVALID CHOICE";
+	}
+	getch();
+ }
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To take ‘N’ numbers from user in an array and then search a number through technique of linear search.
+
+#include<iostream.h>
+#include<conio.h>
+
+void readl(int A[],int n);
+void printl(int A[],int n);
+int lsearch(int A[],int n,int num);
+
+void main()
+{
+	clrscr();
+	int list[100],num,n,p=0;
+
+	cout<<"\n\n\t\t FINDING A NUMBER IN A GIVEN ARRAY ";
+	cout<<"\n\n\tENTER THE NUMBER OF ELEMENTS THAT YOU WANT IN THE ARRAY : ";
+	cin>>n;
+	readl(list,n);
+	clrscr();
+
+	cout<<"Given list of numbers are : \n\n\n";
+	printl(list,n);
+
+	cout<<"\n\nEnter the no. you want to search in the list =";
+	cin>>num;
+	clrscr();
+
+	p = lsearch(list,n,num);
+	if (p==0)
+	cout<<"The no. which you want to search is not in the list";
+	else
+	cout<<"the no. which you searched is in the list at "<<p;
+
+	getch();
+}
+void readl(int A[],int n)
+{
+	for(int i=0;i<n;i++)
+	{
+		cout<<"Enter the "<<i+1<<" term of the list =";
+		cin>>A[i];
+	}
+}
+
+void printl(int A[],int n)
+{
+	for(int i=0;i<n;i++)
+	{
+		cout<<A[i]<<"\t";
+
+	}
+}
+int lsearch(int A[],int n,int num)
+{
+	for(int i=0;i<n;i++)
+	{
+		if(num==A[i])
+		{
+			return(i+1);
+			break;
+		}
+		else
+		return(0);
+	}
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To take ‘N’ numbers from user in an array and then search a number through technique of binary search.
+
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+#define size 100
+
+int BSEARCH(int A[],int N,int NUM)
+{
+	int beg=0,end=N-1,found=0,mid;
+	while(beg<=end&&found==0)
+	{
+		mid=(beg+mid)/2;
+		if(A[mid]==NUM)
+		{
+			found=1;
+		}
+		else
+			if(A[mid]<NUM)
+			{
+				beg=mid+1;
+			}
+	}
+	if(found)
+		return(mid+1);
+	else
+		return(-1);
+}
+
+void READL(int A[],int N)
+{
+	for(int i=0;i<N;i++)
+	{
+		cout<<"\n\n\n\t\tENTER THE "<<i+1<<" TERM OF THE ARRAY IN ASCENDING ORDER :";
+		cin>>A[i];
+	}
+}
+
+void PRINTL(int A[],int N)
+{
+	for(int i=0;i<N;i++)
+	{
+		cout<<"\t"<<A[i]<<endl;
+
+	}
+}
+void main()
+{
+	clrscr();
+	int A[size];
+	int N;
+	int NUM;
+	char ANSW;
+	cout<<"\n\n\t\tFINDING A NUMBER IN A PROVIDED ARRAY";
+	cout<<"n\n\n\tHOW MANY NUMBERS DO YOU WANT IN THE ARRAY : ";
+	cin>>N;
+	READL(A,N);
+	cout<<"\n\n\t\tDO YOU WANT TO SEE THE ARRAY (y/n) : ";
+	cin>>ANSW;
+	clrscr();
+	if(ANSW=='y'||ANSW=='Y')
+		PRINTL(A,N);
+	cout<<"\n\n\tENTER THE NUMBER WHICH YOU WANT TO SEARCH =";
+	cin>>NUM;
+	clrscr();
+
+	int P=BSEARCH(A,N,NUM);
+	if (P==0)
+	cout<<"\n\n\t\tTHE PROVIDED NUMBER IS NOT IN THE ARRAY";
+	else
+	cout<<"\n\n\t\tTHE NUMBER IS IN THE ARRAY AT THE POSITION :"<<P;
+
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM:  To store ‘N’ numbers in an array and then display it and calculate sum of all the elements of array if user assist.
+
+#include<iostream.h>
+#include<conio.h>
+#define size 100
+
+void READLIST( int A[] , int N )
+{
+	for ( int i=0;i<N;i++)
+	{
+		cout<<"\n\n\n\t\tENTER THE NUMBER "<< i+1<<" : ";
+		cin>>A[i];
+		cout<<endl;
+	}
+}
+
+void PRINT( int A[] , int M )
+{
+	for( int j=0 ;j<M ;j++ )
+	 cout<<"\n\n\t\t"<<A[j]<<endl;
+}
+
+float ADD( int A[] , int L )
+{
+	float sum=0;
+	for( int k=0;k<=L-1;k++)
+		sum+=A[k];
+	return(sum);
+
+}
+
+void main()
+{
+	char opt;
+	int A[size];
+	int n;
+	clrscr();
+	cout<<"\n\n\tHOW MANY NUMBERS DO YOU WANT TO STORE IN THE ARRAY : ";
+	cin>>n;
+	READLIST(A,n);
+	PRINT(A,n);
+	cout<<"\n\n\n\t\tDO YOU WANT TO CALCULATE THE SUM OF THE ABOVE PROVIDED VALUES(y/n) : ";
+	cin>>opt;
+	if (opt =='y'||opt== 'Y')
+	{
+		ADD(A,n);
+		cout<<"\n\n\n\t\tSUM OF THE NUMBERS IS = "<<ADD(A,n)<<endl;
+	}
+	else
+	cout<<"\n\n\t\tTHAMK YOU ";
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To take ’N’ elements from user and store them in array and then ask user to insert an element in already existing list.
+
+#include<iostream.h>
+#include<conio.h>
+# define size 1000
+
+void INS(int A[], int N)
+{
+	for(int i=0;i<N;i++)
+	{
+		cout<<"\n\n\t\tENTER THE "<<i+1<<" th ELEMENT : ";
+		cin>>A[i];
+	}
+}
+
+void DIS(int A[], int N)
+{
+	for(int j=0;j<N;j++)
+	{
+		cout<<"\n\n\t\t THE "<<j+1<<" th ELEMENT : "<<A[j];
+		cout<<endl;
+	}
+}
+
+void INSERT ( int A[] ,int &N ,int K,int NUM)
+{
+	if (N==size)
+	{
+		cout<<"\n\n\t\tOVERLOADING OCCURS ";
+		getch();
+		return;
+	}
+
+	for(int k=N;k>=K;k--)
+	{
+		A[k]=A[k-1];
+	}
+
+	A[K-1]=NUM;
+	N++;
+}
+
+void main()
+{
+	clrscr();
+	int A[size],NUM,N,K;
+	cout<<"\n\n\t\tENTER THE NUMBER OF ELEMENTS : ";
+	cin>>N;
+	INS(A,N);
+	DIS(A,N);
+	cout<<"\n\n\t\tENTER THE NUMBER YOU WANT TO ENTER : ";
+	cin>>NUM;
+	cout<<"\n\n\t\tENTER THE DESIRED POSITION : ";
+	cin>>K;
+	INSERT(A,N,K,NUM);
+	DIS(A,N);
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: To take roll no. , name and marks in 3 subjects and calculate the average of the marks and display them of 2 students.
+
+# include<iostream.h>
+# include<conio.h>
+# include<stdio.h>
+
+struct student {
+				  int roll;
+				  char name[20];
+				  float m1,m2,m3;
+				  float avg;
+				};
+void readdata( student &s)
+{
+	cout <<"Enter Roll Number : ";
+	cin >> s.roll;
+	cout <<"Enter Name : ";
+	gets(s.name);
+	cout << "Enter the marks in 3 subjects : ";
+	cin >> s.m1 >> s.m2 >> s.m3;
+}
+
+void calculate ( student &s)
+{
+	s.avg = (s.m1+s.m2+s.m3)/3;
+}
+
+void showdata(student s)
+{
+	cout << "Roll Number : " << s.roll << endl;
+	cout << " Name : " << s.name << endl;
+	cout << "Average Marks : " << s.avg << endl;
+}
+
+void main()
+{
+	clrscr();
+	student st1,st2;
+	cout <<"Enter Detail of student 1 : \n\n";
+	readdata(st1);
+	calculate(st1);
+	cout <<"Enter Detail of student 2 : \n\n";
+	readdata(st2);
+	calculate(st2);
+	clrscr();
+	showdata(st1);
+	showdata(st2);
+
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM : To take code no. , name, Hra , da and calculate gross and sort them according to gross salary of ‘N’ employees.
+
+# include<iostream.h>
+# include<conio.h>
+# include<stdio.h>
+
+struct Employee {
+				   int ecode;
+				   char ename[20];
+				   float basic, hra, da;
+				   float gross;
+				};
+
+void getdata ( Employee &E)
+{
+	cout << "Enter code number : ";
+	cin >> E.ecode;
+	cout << "Enter the Name : ";
+	gets(E.ename);
+	cout << "Enter Basic Pay :";
+	cin >> E.basic;
+	cout << "Enter House Rent Allowance : ";
+	cin >> E.hra;
+	cout << "Enter Dearness Allowance : ";
+	cin >> E.da;
+}
+
+void calgross( Employee &E)
+{
+	E.gross = E.basic + E.hra + E.da;
+}
+
+void showdata(Employee E)
+{
+	cout << E.ecode << "\t" << E.ename << "\t" << E.basic
+		 <<"\t" <<E.hra <<"\t"<< E.da << "\t" << E.gross << "\n\n";
+}
+
+void bsort ( Employee E[],int n )
+{
+	for (int i =0; i<= n-2; i++)
+	{
+		for ( int j =0;j<= n-2-i; j++)
+		{
+
+			if ( E[j].gross < E[j+1].gross )
+			{
+				Employee T = E[j];
+				E[j] =E[j+1];
+				E[j+1] = T;
+			}
+		}
+	}
+}
+void main()
+{
+	clrscr();
+	Employee E[100];
+	int n ;
+	cout << "How Many employeees are there ? : ";
+	cin >> n;
+	for ( int i =0;i<n; i++)
+	{
+		cout << "\n\nEnter Detail of employee " << i+1 << " : \n\n";
+		getdata(E[i]);
+		calgross(E[i]);
+	}
+	clrscr();
+	bsort(E,n);
+
+	cout << "CodeNo." << "\t" << "Name" << "\t\t" << "Basic"
+		 <<"\t" << "HRA" <<"\t"<< "DA" << "\t" << "Gross" << "\n\n";
+	for (i =0;i<n; i++)
+		showdata(E[i]);
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write C++ program to push and pop numbers in a stack and display them as per user’s choice. 
+
+#include<iostream.h>
+#include<conio.h>
+#define stsize 10
+
+class stack {
+		int S[stsize];
+		int top;
+
+		public:
+		stack()  //contructor
+		{
+		   top==-1;
+		}
+		void push();
+		void pop();
+		void display();
+		~stack()
+		{}
+	    };
+
+void stack::push()
+{
+	//check overflow
+	if(top==stsize-1)
+	{
+		cout<<"Stack Overflow";
+		getch();
+		return;
+	}
+
+	float num;
+	cout<<"Enter the number :";
+	cin>>num;
+
+	top++;
+	S[top]=num;
+}
+
+void stack::pop()
+{
+	//Check Underflow
+	if(top==-1)
+	{
+		cout<<"Stack Underflow ";
+		getch();
+		return;
+	}
+
+	int num=S[top];
+	cout<<num<<" is removed from stack"<<endl;
+	top--;
+}
+
+void stack::display()
+{
+	cout<<"Contents of stack are :\n\n\t\t";
+	for(int i=top;i>=0;i++)
+	cout<<S[i]<<" ";
+	cout<<endl;
+}
+
+void menu()
+{
+	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To push an element ";
+	cout<<"\n\n\n\tPress 2 : To pop an element  ";
+	cout<<"\n\n\n\tPress 3 : To display the stack ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{
+	stack st;
+	int opt;
+	do
+	{
+		clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{
+			case 1 : st.push();
+				 break;
+			case 2 : st.pop();
+				getch();
+				 break;
+			case 3 : st.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+
+			getch();
+		}
+	} while(opt!=4);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q.  Write a Menu driven program to enter details of a student using stacks.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#define stsize 10
+
+struct student {
+		 int roll;
+		 float marks;
+		 char name[20];
+	           };
+
+class stack {
+		student S[stsize];
+		int top;
+
+		public:
+		stack()
+		{  top==-1;
+		}
+		void push();
+		void pop();
+		void display();
+		~stack()
+		{}
+	    };
+
+void stack::push()
+{
+	//check overflow
+	if(top==stsize-1)
+	{	cout<<"Stack Overflow";
+		getch();
+		return;
+	}
+	student S1;
+	cout<<"\n\tEnter roll number :  ";
+	cin>>S1.roll;
+	cout<<"\n\tEnter name :  ";
+	gets(S1.name);
+	cout<<"\n\tEnter marks:  ";
+	cin>>S1.marks;
+
+	top++;
+	S[top]=S1;
+}
+
+void stack::pop()
+{
+	//Check Underflow
+	if(top==-1)
+	{	cout<<"stack Underflow ";
+		getch();
+		return;
+	}
+student S1=S[top];
+	cout<<"Record of "<<S1.name<<"is removed"<<endl;
+
+	top--;
+}
+
+void stack::display()
+{	cout<<"Contents of stack are :\n\n\t\t";
+	for(int i=top;i>=0;i++)
+	{
+	   cout<<S[i].roll<<"\t"<<S[i].name<<"\t"<<S[i].marks<<endl;
+	}
+cout<<endl;
+}
+
+void menu()
+{
+	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To enter record ";
+	cout<<"\n\n\n\tPress 2 : To delete record ";
+	cout<<"\n\n\n\tPress 3 : To display the records ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{	stack st;
+	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{
+			case 1 : st.push();
+				 break;
+			case 2 : st.pop();
+				getch();
+				 break;
+			case 3 : st.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+		
+			getch();
+		}
+	} while(opt!=4);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a C++ program to add, delete and display numbers in a queue as per user’s choice.
+
+#include<iostream.h>
+#include<conio.h>
+#define qsize 10
+
+class queue {
+		float Q[qsize];
+		int front,rear;
+
+		public:
+		queue()
+		{
+		   front=rear=-1;
+		}
+		void insert();
+		void del();
+		void display();
+		~queue()
+		{}
+	    };
+
+void queue::insert()
+{
+	//check overflow
+	if(rear==qsize-1)
+	{
+		cout<<"Queue Overflow";
+		getch();
+		return;
+	}
+	float num;
+	cout<<"Enter the number :";
+	cin>>num;
+
+	if(front==-1)
+	front++;
+	rear++;
+	Q[rear]=num;
+}
+
+void queue::del()
+{
+	//Check Underflow
+	if(front==-1)
+	{
+		cout<<"Queue Underflow ";
+		getch();
+		return;
+	}
+
+	float num=Q[front];
+	cout<<num<<" is removed from queue"<<endl;
+	if(front==rear)
+	 front=rear=-1;
+	else
+	 front++;
+}
+
+void queue::display()
+{
+	cout<<"Contents of Queue are :\n\n\t\t";
+	for(int i=front;i<=rear;i++)
+	cout<<Q[i]<<" ";
+	cout<<endl;
+}
+
+void menu()
+{
+	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To insert a element in queue ";
+	cout<<"\n\n\n\tPress 2 : To delete an element from queue ";
+	cout<<"\n\n\n\tPress 3 : To display the queue ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{
+	queue Qt;
+	int opt;
+	do
+	{
+		clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice";
+		cin>>opt;
+		switch(opt)
+		{
+			case 1 : Qt.insert();
+				 break;
+			case 2 : Qt.del();
+				getch();
+				 break;
+			case 3 : Qt.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+
+			getch();
+		}
+	} while(opt!=4);
+} 
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q.  Write a Menu driven program for entering details of students using queues.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#define qsize 10
+
+struct student {	 int roll;
+		 float marks;
+		 char name[20];
+                          };
+
+class queue {	student Q[qsize];
+		int front,rear;
+
+		public:
+		queue()
+		{   front=rear=-1;
+		}
+		void insert();
+		void del();
+		void display();
+		~queue()
+		{}
+	    };
+
+void queue::insert()
+{
+	//check overflow
+	if(rear==qsize-1)
+	{	cout<<"Queue Overflow";
+		getch();
+		return;
+	}
+	student S1;
+	cout<<"\n\tEnter roll number :  ";
+	cin>>S1.roll;
+	cout<<"\n\tEnter name :  ";
+	gets(S1.name);
+	cout<<"\n\tEnter marks:  ";
+	cin>>S1.marks;
+
+	if(front==-1)
+	front++;
+	rear++;
+	Q[rear]=S1;
+}
+
+void queue::del()
+{	//Check Underflow
+	if(front==-1)
+	{	cout<<"Queue Underflow ";
+		getch();
+		return;
+	}
+
+	student S1=Q[front];
+	cout<<"Record of "<<S1.name<<"is removed"<<endl;
+
+	if(front==rear)
+	 front=rear=-1;
+	else
+	 front++;
+}
+
+void queue::display()
+{	cout<<"Contents of Queue are :\n\n\t\t";
+	for(int i=front;i<=rear;i++)
+	{   cout<<Q[i].roll<<"\t"<<Q[i].name<<"\t"<<Q[i].marks<<endl;
+	}
+	cout<<endl;
+}
+
+void menu()
+{	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To enter record ";
+	cout<<"\n\n\n\tPress 2 : To delete record ";
+	cout<<"\n\n\n\tPress 3 : To display the records ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{	queue Qt;
+	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{	case 1 : Qt.insert();
+				 break;
+			case 2 : Qt.del();
+				getch();
+				 break;
+			case 3 : Qt.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+			getch();
+		}
+	} while(opt!=4);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a Menu driven program to enter details of student and make use of circular queues for this purpose.
+
+#include<iostream.h>
+#include<conio.h>
+#define qsize 10
+
+class queue {	float Q[qsize];
+		int front,rear;
+
+		public:
+		queue()
+		{   front=rear=-1;
+		}
+		void insert();
+		void del();
+		void display();
+		~queue()
+		{}
+	    };
+
+void queue::insert()
+{	//check overflow
+	if(rear==qsize-1)
+	{	cout<<"Queue Overflow";
+		getch();
+		return;
+	}
+	float num;
+	cout<<"Enter the number :";
+	cin>>num;
+
+	if(front==-1)
+	 front++;
+	if(rear==qsize-1)
+	 rear=0;
+	else
+	 rear++;
+	Q[rear]=num;
+}
+
+void queue::del()
+{	if(front==-1)
+	{	cout<<"Queue Underflow ";
+		getch();
+		return;
+	}
+float num=Q[front];
+	cout<<num<<" is removed from queue"<<endl;
+	if(front==rear)
+	 front=rear=-1;
+	else
+	if(front==qsize-1)
+	 front=0;
+	else
+	 front++;
+}
+
+void queue::display()
+{       int i;
+	cout<<"Contents of Queue are :\n\n\t\t";
+	if(front<=rear)
+	{  for(int i=front;i<=rear;i++)
+	  cout<<Q[i]<<" ";
+	  cout<<endl;
+	}
+	else
+	{  for(i=front;i<=qsize-1;i++)
+	  cout<<Q[i]<<" ";
+	  for(i=0;i<=rear;i++)
+	  cout<<Q[i]<<" ";
+	}
+}
+
+void menu()
+{	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To insert a element in queue ";
+	cout<<"\n\n\n\tPress 2 : To delete an element from queue ";
+	cout<<"\n\n\n\tPress 3 : To display the queue ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{	queue Qt;
+	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice";
+		cin>>opt;
+		switch(opt)
+		{	case 1 : Qt.insert();
+				 break;
+			case 2 : Qt.del();
+getch();
+				 break;
+			case 3 : Qt.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+getch();
+		}
+	} while(opt!=4);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a Menu driven program to enter, delete and display numbers by using pointers.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+
+struct node {
+		 int data;
+		 node*link;
+	    };
+
+class linkedlist {
+		   node*start;
+
+		   public:
+		   linkedlist()
+		   {
+		    Start==NULL;
+		   }
+		   void insert();
+		   void del();
+		   void display();
+		   ~linkedlist()
+		   {}
+	    };
+
+void linkedlist::insert()
+{
+	//fetching new node from heap area
+	node*ptr;
+	ptr= new node;
+	
+	//putting data into node
+	cout<<"Enter a number : ";
+	cin>>ptr->data;
+
+	//connectivity
+	ptr->link=start;
+	start=ptr;
+}
+
+void linkedlist::del()
+{
+	//Check Underflow
+	if(start==NULL)
+	{
+		cout<<"Underflow occurs";
+		getch();
+		return;
+	}
+	node*ptr;
+	ptr=start;
+	start=start->link;
+	delete ptr;
+
+}
+
+void linkedlist::display()
+{       node*ptr;
+	ptr=start;
+	while(ptr)
+	{
+		cout<<ptr->data<<" ";
+		ptr=ptr->link;
+	}
+}
+
+void menu()
+{	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To add a record ";
+	cout<<"\n\n\n\tPress 2 : To delete a record ";
+	cout<<"\n\n\n\tPress 3 : To display the records ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{
+	linkedlist list;
+	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{
+			case 1 : list.insert();
+				 break;
+			case 2 : list.del();
+				 break;
+			case 3 : list.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+getch();
+		}
+	} while(opt!=4);
+}
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a C++ program to details of student such as name, roll no. and marks by using stacks and pointers.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#define stsize 10
+
+struct student {	 int roll;
+		 student*link;
+		 char name[20];
+	       };
+
+class stack {	student*top;
+
+		public:
+		stack()
+		{  top==NULL;
+		}
+		void push();
+		void pop();
+		void display();
+		~stack()
+		{}
+	    };
+
+void stack::push()
+{
+	//fetching a new node
+	student*ptr;
+	ptr=new student;
+	if(ptr==NULL)
+	{	cout<<"Stack Overflow";
+		getch();
+		return;
+	}
+
+	//putting data into node
+	cout<<"Enter roll number : ";
+	cin>>ptr->roll;
+	cout<<"Enter name : ";
+	gets(ptr->name);
+
+	//connect
+	ptr->link=top;
+	top=ptr;
+}
+
+
+void stack::pop()
+{
+	//Check Underflow
+	if(top==NULL)
+	{	cout<<"Stack Underflow ";
+		getch();
+		return;
+	}
+	student*ptr;
+	ptr=top;
+	cout<<ptr->name<<" is popped from stack";
+	top=top->link;
+	delete ptr;
+}
+
+void stack::display()
+{       student*ptr=top;
+	while(ptr)
+	{	cout<<ptr->roll<<"\t"<<ptr->name<<endl;
+		ptr=ptr->link;
+	}
+}
+
+
+void menu()
+{	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To enter record ";
+	cout<<"\n\n\n\tPress 2 : To delete record ";
+	cout<<"\n\n\n\tPress 3 : To display the records ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{
+	stack st;
+	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{	case 1 : st.push();
+				 break;
+			case 2 : st.pop();
+				getch();
+				 break;
+			case 3 : st.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+getch();
+		}
+	} while(opt!=4);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a C++ code to enter details of employees such as code no. , name and salary by using queues and pointers.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+
+struct employee {   int code;
+		     float salary;
+		     char name[20];
+		     employee*next;
+		};
+
+class queue {	employee*front,*rear;
+public:
+		queue()
+		{   front=rear=NULL;
+		}
+		void insert();
+		void del();
+		void display();
+		~queue()
+		{}
+	    };
+
+void queue::insert()
+{       employee*ptr=new employee;
+	//check overflow
+	if(ptr==NULL)
+	{	cout<<"Queue Overflow";
+		getch();
+		return;
+	}
+
+	cout<<"\n\tEnter code number :  ";
+	cin>>ptr->code;
+	cout<<"\n\tEnter name of employee:  ";
+	gets(ptr->name);
+	cout<<"\n\tEnter salary:  ";
+	cin>>ptr->salary;
+	ptr->next=NULL;
+	if(front==NULL)
+	front=rear=ptr;
+	else
+	{	rear->next=ptr;
+		rear=ptr;
+	}
+
+}
+
+void queue::del()
+{	if(front==NULL)
+	{	cout<<"Queue Underflow ";
+		getch();
+		return;
+	}
+	employee*ptr=front;
+	cout<<ptr->name<<" is removed";
+	if(front==rear)
+	  front=rear=NULL;
+	else
+	  front=front->next;
+	delete ptr;
+}
+
+void queue::display()
+{	employee*ptr=front;
+	while(ptr)
+	{	cout<<ptr->code<<"\t"<<ptr->name<<"\t"<<ptr->salary<<endl;
+		ptr=ptr->next;
+	}
+
+}
+
+void menu()
+{	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To enter record ";
+	cout<<"\n\n\n\tPress 2 : To delete record ";
+	cout<<"\n\n\n\tPress 3 : To display the records ";
+	cout<<"\n\n\n\tPress 4 : To exit ";
+}
+
+void main()
+{	queue Qt;
+	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{	case 1 : Qt.insert();
+				 break;
+			case 2 : Qt.del();
+				getch();
+				 break;
+			case 3 : Qt.display();
+				 getch();
+				 break;
+			case 4 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+			getch();
+		}
+	} while(opt!=4);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a C++ Program to create and display student’s data such as name roll no. and marks stored in file “Stud.dat” .
+
+#include<fstream.h>
+#include<conio.h>
+#include<stdio.h>
+
+struct student{
+		int roll;
+		char name[20];
+		float marks;
+	      };
+
+void createfile()
+{
+	fstream file;
+	file.open("Stud.dat",ios::app|ios::binary);
+	if(!file)
+	{
+	  cout<<"File doesn't open ";
+	  getch();
+	  return;
+	}
+
+	student S;
+	char ch;
+	do
+	{
+		//Taking data from user
+		cout<<"Enter roll number : ";
+		cin>>S.roll;
+		cout<<"Enter name : ";
+		gets(S.name);
+		cout<<"Enter marks :";
+		cin>>S.marks;
+		//Writing data into file
+		file.write((char*)&S,sizeof(S));
+
+		cout<<"Wish to enter more data record (Y/N) :  ";
+		cin>>ch;
+	} while(ch=='y'|| ch=='Y');
+
+	file.close();
+}
+
+void displayfile()
+{
+	fstream file;
+	file.open("Stud.dat",ios::in|ios::binary);
+	student S;
+	while(file.read((char*)&S, sizeof(S)))
+	{
+		cout<<S.roll<<"\t"<<S.name<<"\t"<<S.marks<<"\n";
+	}
+	file.close();
+}
+
+void menu()
+{
+	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\n\tPress 1 : To enter record ";
+	cout<<"\n\n\n\tPress 2 : To display the records ";
+	cout<<"\n\n\n\tPress 3 : To exit ";
+}
+
+void main()
+{
+	int opt;
+	do
+	{
+		clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{
+			case 1 : createfile();
+				 break;
+			case 2 : cout<<"\n\nContents of File are : \n\n";
+				 displayfile();
+				 getch();
+				 break;
+			case 3 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				getch();
+				 break;
+			default : cout<<" Invalid choice ";
+
+			getch();
+		}
+	} while(opt!=3);
+}
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Q. Write a Menu driven program for adding, deleting, displaying, searching and modifying students details such as Name, Roll number and marks in a file “Stud.dat”.
+
+#include<fstream.h>
+#include<conio.h>
+#include<stdio.h>
+
+class student{
+		int roll;
+		char name[20];
+		float marks;
+
+		public:
+		void getdata();
+		void showdata();
+		int retroll();
+		float retmarks();
+
+	      };
+void student::getdata()
+{
+	cout<<"\n\tEnter Roll number :\t";
+	cin>>roll;
+	cout<<"\n\tEnter name :\t";
+	gets(name);
+	cout<<"\nEnter Marks :\t";
+	cin>>marks;
+}
+
+void student::showdata()
+{
+	cout<<roll<<"\t"<<name<<"\t"<<marks<<"\n\n";
+}
+
+
+void Addrecord()
+{
+	fstream file;
+	file.open("Stud.dat",ios::app|ios::binary);
+
+	student S;
+	char ch;
+	do
+	{
+		S.getdata();
+
+		file.write((char*)&S,sizeof(S));
+
+		cout<<"Wish to enter more data record (Y/N) :  ";
+		cin>>ch;
+
+	} while(ch=='y'|| ch=='Y');
+
+	file.close();
+}
+
+void displayfile()
+{
+	fstream file;
+	file.open("Stud.dat",ios::in|ios::binary);
+	student S;
+	while(file.read((char*)&S, sizeof(S)))
+	{
+	       S.showdata();
+	}
+	file.close();
+}
+
+void Distinction()
+{
+	fstream file;
+	file.open("stud.dat", ios::in | ios::binary);
+	student S;
+
+	while(file.read((char*)&S, sizeof(S)))
+	{	if(S.retmarks()>=75)
+		S.showdata();
+	}
+
+	file.close();
+}
+
+float student::retmarks()
+{
+	return(marks);
+}
+
+int student::retroll()
+{
+	return(roll);
+}
+
+void search()
+{
+	fstream file;
+	file.open("Stud.dat", ios::in| ios::binary);
+
+	int RN;
+	char ch;
+	cout<<"Enter roll number of student : ";
+	ch>>RN;
+
+	student S;
+	int found=0;
+
+	while(file.read((char*)&S , sizeof(S)))
+	{	if(S.retroll()==RN)
+		{	found=1;
+			break;
+		}
+	}
+	if(found)
+	  S.showdata();
+
+	else
+	  cout<<"Record not found";
+file.close();
+}
+
+void deleterec()
+{	int RN;
+	fstream file1 , file2;
+	file1.open("Stud.dat", ios::out|ios::binary);
+	file2.open("Temp.dat", ios::out|ios::binary);
+
+	cout<<"Enter Roll number of student : ";
+	cin>>RN;
+
+	student S;
+	while(file1.read((char*)&S,sizeof(S)))
+	{
+	    if(S.retroll()!=RN)
+	    file2.write((char*)&S , sizeof(S));
+	}
+	file1.close();
+	file2.close();
+
+	remove("Stud.dat");
+	rename("Temp.dat" , "Stud.dat");
+}
+
+void modify()
+{	fstream file;
+	file.open("Stud.dat", ios::in|ios::out|ios::binary);
+
+	int RN;
+	char ch;
+	cout<<"Enter roll number of student : ";
+	ch>>RN;
+
+	student S;
+	int found=0;
+
+	while(file.read((char*)&S , sizeof(S)))
+	{
+		if(S.retroll()==RN)
+		{	found=1;
+			break;
+		}
+	}
+	if(!found)
+       {	  cout<<"Record not found";
+	  getch();
+	  return;
+       }
+       cout<<"Enter new details : \n\n";
+       S.getdata();
+       file.close();
+}
+
+void menu()
+{
+	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\tPress 1 : To Add a record ";
+	cout<<"\n\tPress 2 : To display the records ";
+	cout<<"\n\tPress 3 : To view distinctions ";
+	cout<<"\n\tPress 4 : To modify a record ";
+	cout<<"\n\tPress 5 : To search a record ";
+	cout<<"\n\tPress 6 : To delete a record ";
+	cout<<"\n\tPress 7 : To exit ";
+}
+
+void main()
+{	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{	case 1 : Addrecord();
+				 break;
+			case 2 : displayfile();
+				 getch();
+				 break;
+			case 3 : Distinction();
+				 getch();
+				 break;
+			case 4 : modify();
+				 break;
+			case 5 : search();
+				 break;
+			case 6 : deleterec();
+				 break;
+			case 7 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+			getch();
+		}
+	} while(opt!=7);
+} 
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Aim : To create and display a binary file .
+
+#include<iostream.h>
+#include<fstream.h>
+#include<conio.h>
+
+void createfile()
+{
+	      int num;
+	      char ch;
+	      fstream file;
+	      file.open("stu.dat",ios::out);
+	      do{
+			cout<<" Enter number :";
+			cin>>num;
+			file<<num<<" ";
+			cout<<" Wish to enter more number (Y/N):";
+			cin>>ch;
+	      }while(ch=='y'|ch=='Y');
+	      file.close();
+}
+void display()
+{
+	int num;
+	fstream file;
+	file.open("stu.dat",ios::in);
+	file>>num;
+	while(file)
+	{
+		cout<<num<<" ";
+		file>>num;
+	}
+	file.close();
+}
+void main()
+{
+	clrscr();
+	createfile();
+	clrscr();
+	cout<<" CONTENTS OF FILE ARE ....... "<<endl;
+	display();
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Aim : To create and display text file.
+
+#include<iostream.h>
+#include<fstream.h>
+#include<conio.h>
+
+void createfile()
+{
+	      char ch;
+	      fstream file;
+	      file.open("para.txt",ios::out);
+	      cin.get(ch);
+	      while(ch!='#')
+	      {
+		file.put(ch);
+		cin.get(ch);
+	      }
+	      file.close();
+}
+
+
+void display()
+{
+	char ch;
+	fstream file;
+	file.open("para.txt",ios::in);
+	file.get(ch);
+	while(!file.eof())
+	{
+		cout<<ch;
+		file.get(ch);
+	}
+	file.close();
+}
+
+void main()
+{
+	clrscr();
+	cout<<" Enter the text :\n\n";
+
+		createfile();
+	clrscr();
+	cout<<" CONTENTS OF FILE ARE ....... "<<endl;
+	display();
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Aim: To create, display and count number of words in a text file.
+#include<iostream.h>
+#include<fstream.h>
+#include<conio.h>
+
+void createfile()
+{
+	      char ch;
+	      fstream file;
+	      file.open("para.txt",ios::out);
+	      cin.get(ch);
+	      while(ch!='#')
+	      {
+		file.put(ch);
+		cin.get(ch);
+	      }
+	      file.close();
+}	
+
+
+void display()
+{
+	char ch;
+	fstream file;
+	file.open("para.txt",ios::in);
+	file.get(ch);
+	while(!file.eof())
+	{
+		cout<<ch;
+		file.get(ch);
+	}
+	file.close();
+}
+void countwords()
+{
+	fstream file;
+	file.open("para.txt",ios::in);
+	char word[30];
+	int x=0;
+	while(!file.eof())
+	{
+		file>>word;
+		x++;
+	}
+	cout<<" No. OF WORDS :"<<x;
+	file.close();
+	getch();
+}
+
+void main()
+{
+	clrscr();
+	cout<<" Enter the text :\n\n";
+
+		createfile();
+	clrscr();
+	cout<<" CONTENTS OF FILE ARE ....... "<<endl;
+	display();
+	countwords();
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+AIM: Write a Menu driven program for adding, deleting, displaying, searching and modifying students details such as Name, Roll number and marks in a file “Stud.dat”.
+
+#include<fstream.h>
+#include<conio.h>
+#include<stdio.h>
+
+class student{
+		int roll;
+		char name[20];
+		float marks;
+
+		public:
+		void getdata();
+		void showdata();
+		int retroll();
+		float retmarks();
+
+	      };
+void student::getdata()
+{
+	cout<<"\n\tEnter Roll number :\t";
+	cin>>roll;
+	cout<<"\n\tEnter name :\t";
+	gets(name);
+	cout<<"\nEnter Marks :\t";
+	cin>>marks;
+}
+
+void student::showdata()
+{
+	cout<<roll<<"\t"<<name<<"\t"<<marks<<"\n\n";
+}
+
+
+void Addrecord()
+{
+	fstream file;
+	file.open("Stud.dat",ios::app|ios::binary);
+
+	student S;
+	char ch;
+	do
+	{
+		S.getdata();
+
+		file.write((char*)&S,sizeof(S));
+
+		cout<<"Wish to enter more data record (Y/N) :  ";
+		cin>>ch;
+
+	} while(ch=='y'|| ch=='Y');
+
+	file.close();
+}
+
+void displayfile()
+{
+	fstream file;
+	file.open("Stud.dat",ios::in|ios::binary);
+	student S;
+	while(file.read((char*)&S, sizeof(S)))
+	{
+	       S.showdata();
+	}
+	file.close();
+}
+
+void Distinction()
+{
+	fstream file;
+	file.open("stud.dat", ios::in | ios::binary);
+	student S;
+
+	while(file.read((char*)&S, sizeof(S)))
+	{	if(S.retmarks()>=75)
+		S.showdata();
+	}
+
+	file.close();
+}
+
+float student::retmarks()
+{
+	return(marks);
+}
+
+int student::retroll()
+{
+	return(roll);
+}
+
+void search()
+{
+	fstream file;
+	file.open("Stud.dat", ios::in| ios::binary);
+
+	int RN;
+	char ch;
+	cout<<"Enter roll number of student : ";
+	ch>>RN;
+
+	student S;
+	int found=0;
+
+	while(file.read((char*)&S , sizeof(S)))
+	{	if(S.retroll()==RN)
+		{	found=1;
+			break;
+		}
+	}
+	if(found)
+	  S.showdata();
+
+	else
+	  cout<<"Record not found";
+file.close();
+}
+
+void deleterec()
+{	int RN;
+	fstream file1 , file2;
+	file1.open("Stud.dat", ios::out|ios::binary);
+	file2.open("Temp.dat", ios::out|ios::binary);
+
+	cout<<"Enter Roll number of student : ";
+	cin>>RN;
+
+	student S;
+	while(file1.read((char*)&S,sizeof(S)))
+	{
+	    if(S.retroll()!=RN)
+	    file2.write((char*)&S , sizeof(S));
+	}
+	file1.close();
+	file2.close();
+
+	remove("Stud.dat");
+	rename("Temp.dat" , "Stud.dat");
+}
+
+void modify()
+{	fstream file;
+	file.open("Stud.dat", ios::in|ios::out|ios::binary);
+
+	int RN;
+	char ch;
+	cout<<"Enter roll number of student : ";
+	ch>>RN;
+
+	student S;
+	int found=0;
+
+	while(file.read((char*)&S , sizeof(S)))
+	{
+		if(S.retroll()==RN)
+		{	found=1;
+			break;
+		}
+	}
+	if(!found)
+       {	  cout<<"Record not found";
+	  getch();
+	  return;
+       }
+       cout<<"Enter new details : \n\n";
+       S.getdata();
+       file.close();
+}
+
+void menu()
+{
+	cout<<"\n\n\t\tMAIN MENU";
+	cout<<"\n\n\tPress 1 : To Add a record ";
+	cout<<"\n\tPress 2 : To display the records ";
+	cout<<"\n\tPress 3 : To view distinctions ";
+	cout<<"\n\tPress 4 : To modify a record ";
+	cout<<"\n\tPress 5 : To search a record ";
+	cout<<"\n\tPress 6 : To delete a record ";
+	cout<<"\n\tPress 7 : To exit ";
+}
+
+void main()
+{	int opt;
+	do
+	{	clrscr();
+		menu();
+		cout<<"\n\n\t\tEnter your choice:\n\t\t";
+		cin>>opt;
+		switch(opt)
+		{	case 1 : Addrecord();
+				 break;
+			case 2 : displayfile();
+				 getch();
+				 break;
+			case 3 : Distinction();
+				 getch();
+				 break;
+			case 4 : modify();
+				 break;
+			case 5 : search();
+				 break;
+			case 6 : deleterec();
+				 break;
+			case 7 : cout<<"\n\n\n\t\tGood BYE !!! " ;
+				 break;
+			default : cout<<" Invalid choice ";
+			getch();
+		}
+	} while(opt!=7);
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Aim : WAP to read, display records of employees and to calculate net salary and display it.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+
+class employee{
+		char name[20];
+		int code;
+		float basic,hra,da;
+		float netsal;
+		public:
+		void getdata();
+		void putdata();
+		int retcode()
+		{
+			return(code);
+		}
+		float calnet();
+}e;
+void employee::getdata()
+{
+	cout<<"\n\n \t\\\~~~~~~~~~~ ENTER DETAILS OF STUDENT ~~~~~~~~~~~~~~"<<endl;
+	cout<<"\n\t\t Enter name :";
+	gets(name);
+	cout<<" \n\t\t Enter code :";
+	cin>>code;
+	cout<<" \n\t\t Enter basic :";
+	cin>>basic;
+	cout<<" \n\t\t Enter hra and da:";
+	cin>>hra>>da;
+}
+void employee::putdata()
+{       float p=calnet();
+	cout<<name<<"\t"<<code<<"\t"<<basic<<"\t"<<p<<endl;
+}
+float employee::calnet()
+{
+	  float netsal;
+	  netsal=basic+hra+da;
+	  return(netsal);
+}
+void main()
+{
+	clrscr();
+	char opt;
+	employee e[10];
+	int n;
+	cout<<"\n\n\t\t WELCOME "<<endl;
+	cout<<" Enter the number of employee :";
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		clrscr();
+		e[i].getdata();
+	}
+	clrscr();
+	cout<<" CONTENTS .........."<<endl;
+	cout<<"Name "<<"\t Code"<<"\t Basic "<<"\t Net salary"<<endl;
+
+	for(int j=0;j<n;j++)
+	{
+		e[j].putdata();
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Aim : To read ,and display records of students and then to calculate average marks in 3 subjects.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+
+class student{
+		char name[20];
+		int roll;
+		float m1,m2,m3;
+		char Class[4];
+		float avg;
+		public:
+		void getdata();
+		void putdata();
+		float calavg();
+}s;
+void student::getdata()
+{
+	cout<<"\n\t\t ~~~~~~~~~ Enter the details of student ~~~~~~~~~~~~"<<endl;
+	cout<<"\t\t Enter the name :";
+	gets(name );
+	cout<<" \t\t Enter the roll :";
+
+	cin>>roll;
+	cout<<" \t\t Enter the class :";
+	gets(Class);
+	cout<<" Enter the marks in 3 subjects :";
+	cin>>m1>>m2>>m3;
+}
+void student::putdata()
+{
+	float avg;
+	avg=calavg();
+	cout<<name<<"\t"<<roll<<"\t"<<Class<<"\t\t"<<avg<<endl;
+}
+float student::calavg()
+{
+	float avg;
+	avg=(m1+m2+m3)/3;
+	return(avg);
+}
+void main()
+{	clrscr();
+	student s[20];
+	int n;
+	cout<<"\n\t ~~~~~~~~~~ WELCOME ~~~~~~~~~~~"<<endl;
+	cout<<"\t\t Enter the number of students :";
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		s[i].getdata();
+	}
+	clrscr();
+	cout<<"\n\n \t ~~~~~~~~~ List of students ~~~~~~~~~~"<<endl;
+	cout<<"Name "<<"\t\t"<<" Roll"<<"\t"<<" Class "<<"\t"<<"\t Average"<<endl;
+	for(int j=0;j<n;j++)
+	{
+		s[j].putdata();
+	}
+	getch();
+}
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Aim: To read ,display and allot stream to a student according to the average marks in 3 subjects.
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<string.h>
+
+class student{
+		char name[20];
+		int roll;
+		float m1,m2,m3;
+		char Class[4];
+		float avg;
+		char stream[20];
+		public:
+		void getdata();
+		void putdata();
+		void allotstream();
+		float calavg();
+}s;
+void student::getdata()
+{
+	cout<<"\n\t\t ~~~~~~~~~ Enter the details of student ~~~~~~~~~~~~"<<endl;
+	cout<<"\t\t Enter the name :";
+	gets(name );
+	cout<<" \t\t Enter the roll :";
+
+	cin>>roll;
+	cout<<" \t\t Enter the class :";
+	gets(Class);
+	cout<<" Enter the marks in 3 subjects :";
+	cin>>m1>>m2>>m3;
+}
+void student::putdata()
+{
+	float avg;
+	avg=calavg();
+	allotstream();
+	cout<<name<<"\t"<<roll<<"\t"<<Class<<"\t\t"<<avg<<"\t\t"<<stream<<endl;
+}
+float student::calavg()
+{
+	float avg;
+	avg=(m1+m2+m3)/3;
+	return(avg);
+}
+void student::allotstream()
+{
+	calavg();
+	if(avg>=90)
+	 strcpy(stream,"Science");
+
+	else
+	 if(avg>=80)
+	   strcpy(stream," Commerce(M)");
+	else
+	 if(avg>=70)
+	  strcpy(stream,"Commerce");
+	else
+	  strcpy(stream,"Vocational");
+}
+void main()
+{	clrscr();
+	student s[20];
+	int n;
+	cout<<"\n\t ~~~~~~~~~~ WELCOME ~~~~~~~~~~~"<<endl;
+	cout<<"\t\t Enter the number of students :";
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		s[i].getdata();
+	}
+	clrscr();
+	cout<<"\n\n \t ~~~~~~~~~ List of students ~~~~~~~~~~"<<endl;
+	cout<<"Name "<<"\t\t"<<" Roll"<<"\t"<<" Class "<<"\t"<<"\t Average"<<"\t Stream "<<endl;
+	for(int j=0;j<n;j++)
+	{
+		s[j].putdata();
+	}
+	getch();
+}
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+ 
+AIM: WAP to form matrix and obtain sum of diagnals and sum of elements of upper triangle.
+
+#include<iostream.h>
+#include<conio.h>
+
+class MATRIX{
+
+		int n;
+		int A[10][10];
+		public :
+
+			void getdata();
+			void displaydata();
+			void diagonalsum();
+			void ltriangle();
+			void Utriangle();
+
+	 };
+
+void MATRIX::getdata()
+{
+	cout<<"\n\n\t\tENTER THE ORDER OF MATRIX : ";
+	cin>>n;
+	for(int i = 0; i<n; i++)
+	{
+		for( int j=0; j<n; j++)
+		{
+			cout<<"\n\n\tENTER THE ELEMENT IN "
+			    <<i+1<<" ROW AND "<< j+1<<" COLOUMN : ";
+			cin>>A[i][j];
+		}
+	}
+}
+
+void MATRIX::displaydata()
+{
+	for(int i = 0; i<n; i++)
+	{
+		for( int j=0; j<n; j++)
+			cout << A[i][j] << "\t";
+		cout << endl;
+
+	}
+}
+void MATRIX::diagonalsum()
+{
+	long d1 = 0, d2 = 0, d3;
+	for ( int i = 0; i<n; i++)
+	{
+		d1 += A[i][i];
+		d2 += A[i][n-1-i];
+	}
+	d3 = d1+d2;
+	cout << "\n\n Sum of elements of main diagonal = " << d1 << endl;
+	cout << "\n\n Sum of elements of Second diagonal = " << d2 << endl;
+	cout << "\n\n Sum of elements of diagonals = " << d3 << endl;
+}
+void MATRIX::Utriangle()
+{
+	for(int i = 0; i<n; i++)
+	{
+		for( int j=0; j<n; j++)
+		    if ( i <= j )
+			cout << A[i][j] << "\t";
+
+		cout << endl;
+
+	}
+}
+void MATRIX::ltriangle()
+{
+	for(int i = 0; i<n; i++)
+	{
+		for( int j=0; j<n; j++)
+		    if ( i >= j )
+			cout << A[i][j] << "\t";
+
+		cout << endl;
+
+	}
+}
+
+void main()
+{
+	clrscr();
+	MATRIX  mat1;
+	mat1.getdata();
+	cout << "\n\nGiven Matrix : \n\n";
+	mat1.displaydata();
+	mat1.diagonalsum();
+	cout << "\n\nUPPER TRIANGULAR Matrix : \n\n";
+	mat1.Utriangle();
+	cout << "\n\nLOWER TRIANGULAR Matrix : \n\n";
+	mat1.ltriangle();
+	getch();
+}
