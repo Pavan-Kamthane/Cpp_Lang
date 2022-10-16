@@ -3,15 +3,21 @@
 using namespace std;
 
 int main() {
+    int n;
+    long factorial = 1.0;
 
-   int n = 5, fact = 1, i;
+    cout << "Enter a positive integer: ";
+    cin >> n;
 
-   for(i=1; i<=n; i++)
+    if (n < 0)
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    else {
+        for(int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << "Factorial of " << n << " = " << factorial;    
+    }
 
-   fact = fact * i;
-
-   cout<<"Factorial of "<<n<<" is "<<fact;
-
-   return 0;
+    return 0;
 
 }
