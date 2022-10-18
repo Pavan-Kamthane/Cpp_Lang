@@ -10,7 +10,7 @@ int main()
     cin>>num;
     first = 0;
     last = 9;
-    middle = (first+last)/2;
+    middle = first+(last-first)/2;
     while(first <= last)
     {
         if(arr[middle]<num)
